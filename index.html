@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Previto - Prevenção Inteligente de Lesões por Pressão</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+        }
+        /* Estilos para o modal e formulário */
+        .modal-overlay {
+            transition: opacity 0.3s ease;
+        }
+        .modal-content {
+            transition: transform 0.3s ease;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800">
+
+    <!-- Header -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-sky-600">Previto</h1>
+            <a href="#contato" class="bg-sky-600 text-white font-semibold px-4 py-2 rounded-lg hover:bg-sky-700 transition-colors">
+                Saiba Mais
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <main class="container mx-auto px-6 py-16 md:py-24 text-center">
+        <h2 class="text-3xl md:text-5xl font-bold mb-4 text-slate-900 leading-tight">
+            Prevenção de Lesões por Pressão com Inteligência e Dados.
+        </h2>
+        <p class="text-lg md:text-xl text-slate-600 max-w-3xl mx-auto mb-8">
+            Substituímos um processo manual, reativo e caro por uma plataforma inteligente e proativa que protege pacientes e otimiza o trabalho da sua equipe.
+        </p>
+        <div class="flex justify-center">
+            <a href="#solucao" class="bg-sky-600 text-white font-bold px-8 py-3 rounded-lg text-lg hover:bg-sky-700 transition-transform hover:scale-105">
+                Conheça a Solução
+            </a>
+        </div>
+    </main>
+
+    <!-- Seção de Pesquisa CTA -->
+    <section id="pesquisa-cta" class="bg-sky-700 text-white">
+        <div class="container mx-auto px-6 py-12 text-center">
+            <h3 class="text-2xl md:text-3xl font-bold mb-3">Você é profissional de enfermagem?</h3>
+            <p class="text-lg md:text-xl text-sky-100 max-w-3xl mx-auto mb-6">
+                Sua opinião é fundamental para o desenvolvimento do Previto. Participe da nossa pesquisa rápida e ajude a moldar o futuro do cuidado ao paciente!
+            </p>
+            <button id="open-survey-btn" class="bg-white text-sky-700 font-bold px-8 py-3 rounded-lg text-lg hover:bg-sky-100 transition-transform hover:scale-105 shadow-lg">
+                Responder Pesquisa (5 min)
+            </button>
+        </div>
+    </section>
+
+    <!-- O Problema Section -->
+    <section id="problema" class="gradient-bg">
+        <div class="container mx-auto px-6 py-16 md:py-20">
+            <div class="text-center mb-12">
+                <span class="text-sky-600 font-semibold">O DESAFIO</span>
+                <h3 class="text-3xl md:text-4xl font-bold text-slate-900 mt-2">Um pesadelo financeiro e operacional.</h3>
+                <p class="mt-4 text-slate-600 max-w-2xl mx-auto">
+                    As lesões por pressão (escaras) são um dos problemas mais graves e custosos na gestão de pacientes de longa internação.
+                </p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8 text-center">
+                <div class="bg-white p-6 rounded-xl shadow-md">
+                    <h4 class="text-xl font-bold text-slate-800 mb-2">Custos Elevados</h4>
+                    <p class="text-slate-600">O tratamento de um único caso pode consumir dezenas de milhares de reais, impactando diretamente o orçamento.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-md">
+                    <h4 class="text-xl font-bold text-slate-800 mb-2">Maior Tempo de Internação</h4>
+                    <p class="text-slate-600">Pacientes com lesões permanecem mais tempo no hospital, ocupando leitos e recursos valiosos.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-md">
+                    <h4 class="text-xl font-bold text-slate-800 mb-2">Processo Manual Ineficiente</h4>
+                    <p class="text-slate-600">A rotina de virar pacientes a cada 2 horas é cansativa para a equipe, imprecisa e consome um tempo que poderia ser usado em outras frentes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- A Solução Section -->
+    <section id="solucao" class="bg-white">
+        <div class="container mx-auto px-6 py-16 md:py-20">
+             <div class="text-center mb-12">
+                <span class="text-sky-600 font-semibold">A NOSSA SOLUÇÃO</span>
+                <h3 class="text-3xl md:text-4xl font-bold text-slate-900 mt-2">Apresentando o Previto S1 (MVP)</h3>
+                 <p class="mt-4 text-slate-600 max-w-3xl mx-auto">
+                    O Previto S1 é o nosso Mínimo Produto Viável: um sistema de monitoramento que "sente" a pressão em tempo real, 24 horas por dia, e notifica a equipe de enfermagem antes que a lesão aconteça.
+                </p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="flex flex-col items-center text-center p-4">
+                    <div class="bg-sky-100 rounded-full p-4 mb-4">
+                        <svg class="w-8 h-8 text-sky-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    </div>
+                    <h4 class="text-lg font-bold">Monitoramento 24/7</h4>
+                    <p class="text-slate-600 mt-1">Sensores inteligentes monitoram continuamente as zonas de risco do paciente.</p>
+                </div>
+                <div class="flex flex-col items-center text-center p-4">
+                    <div class="bg-sky-100 rounded-full p-4 mb-4">
+                        <svg class="w-8 h-8 text-sky-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"></path></svg>
+                    </div>
+                    <h4 class="text-lg font-bold">Alertas Imediatos</h4>
+                    <p class="text-slate-600 mt-1">Ao detectar perigo, o sistema ativa alertas visuais e sonoros para a equipe de enfermagem.</p>
+                </div>
+                <div class="flex flex-col items-center text-center p-4">
+                    <div class="bg-sky-100 rounded-full p-4 mb-4">
+                        <svg class="w-8 h-8 text-sky-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                    </div>
+                    <h4 class="text-lg font-bold">Registro de Dados</h4>
+                    <p class="text-slate-600 mt-1">Cada evento de risco é registrado, gerando dados valiosos para provar a eficácia e o ROI da solução.</p>
+                </div>
+                <div class="flex flex-col items-center text-center p-4">
+                     <div class="bg-sky-100 rounded-full p-4 mb-4">
+                       <svg class="w-8 h-8 text-sky-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                    </div>
+                    <h4 class="text-lg font-bold">Ação Precisa</h4>
+                    <p class="text-slate-600 mt-1">Troque o "achismo" por alertas baseados em dados, otimizando o tempo e a precisão do cuidado.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Visão de Futuro Section -->
+    <section id="futuro" class="gradient-bg">
+        <div class="container mx-auto px-6 py-16 md:py-20">
+            <div class="text-center mb-12">
+                <span class="text-sky-600 font-semibold">NOSSA VISÃO</span>
+                <h3 class="text-3xl md:text-4xl font-bold text-slate-900 mt-2">O Previto S1 é apenas o começo.</h3>
+            </div>
+            <div class="flex flex-col md:flex-row justify-center items-center gap-8">
+                <!-- Fase 1 -->
+                <div class="flex-1 text-center p-6 bg-white/70 rounded-lg">
+                    <div class="font-bold text-sky-600 mb-2">FASE 1</div>
+                    <h4 class="text-xl font-bold text-slate-800 mb-2">MVP</h4>
+                    <p class="text-slate-600">Provar a eficácia da nossa tecnologia e coletar o dataset inicial para validar as hipóteses de negócio.</p>
+                </div>
+                
+                 <div class="text-sky-400 font-bold text-2xl hidden md:block">&rarr;</div>
+                 <div class="text-sky-400 font-bold text-2xl md:hidden">&darr;</div>
+
+
+                <!-- Fase 2 -->
+                 <div class="flex-1 text-center p-6 bg-white/70 rounded-lg">
+                    <div class="font-bold text-sky-600 mb-2">FASE 2</div>
+                    <h4 class="text-xl font-bold text-slate-800 mb-2">Piloto</h4>
+                    <p class="text-slate-600">Implementar uma versão conectada em hospitais, com um dashboard central para a equipe de enfermagem.</p>
+                </div>
+                
+                <div class="text-sky-400 font-bold text-2xl hidden md:block">&rarr;</div>
+                <div class="text-sky-400 font-bold text-2xl md:hidden">&darr;</div>
+
+                <!-- Fase 3 -->
+                 <div class="flex-1 text-center p-6 bg-white/70 rounded-lg">
+                    <div class="font-bold text-sky-600 mb-2">FASE 3</div>
+                    <h4 class="text-xl font-bold text-slate-800 mb-2">Escala</h4>
+                    <p class="text-slate-600">Lançar a plataforma completa com análises preditivas baseadas em IA, revolucionando o cuidado preventivo.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contato/CTA Section -->
+    <section id="contato" class="bg-white">
+         <div class="container mx-auto px-6 py-16 md:py-24 text-center">
+            <h3 class="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
+                Vamos revolucionar o cuidado preventivo juntos?
+            </h3>
+            <p class="text-lg md:text-xl text-slate-600 max-w-3xl mx-auto mb-8">
+                Estamos buscando parceiros para validar nossa tecnologia e iniciar os primeiros projetos piloto. Se você é um gestor hospitalar visionário, queremos conversar.
+            </p>
+            <div class="bg-slate-100 inline-block p-4 rounded-lg border border-slate-200">
+                <a href="mailto:norbertocimirro@gmail.com" class="text-lg text-sky-600 font-semibold hover:underline">
+                    norbertocimirro@gmail.com
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-800 text-white">
+        <div class="container mx-auto px-6 py-6 text-center">
+            <p>&copy; 2025 Previto. Todos os direitos reservados.</p>
+             <p class="text-sm text-slate-400 mt-2">Uma solução inovadora para a área da saúde.</p>
+        </div>
+    </footer>
+
+    <!-- Modal da Pesquisa -->
+    <div id="survey-modal" class="modal-overlay fixed inset-0 bg-black bg-opacity-60 flex items-center justify-center p-4 z-50 hidden">
+        <div class="modal-content bg-white rounded-lg shadow-2xl w-full max-w-2xl max-h-[90vh] overflow-y-auto transform scale-95">
+            <div class="p-6">
+                <div class="flex justify-between items-start mb-4">
+                    <div>
+                        <h2 class="text-2xl font-bold text-slate-900">Pesquisa para Profissionais de Enfermagem</h2>
+                        <p class="text-slate-600">Inovação no Cuidado ao Paciente</p>
+                    </div>
+                    <button id="close-survey-btn" class="text-3xl text-slate-500 hover:text-slate-800">&times;</button>
+                </div>
+                
+                <div class="text-slate-700 space-y-4">
+                    <p>Olá! Meu nome é <strong>Norberto Cimirro</strong>, sou Enfermeiro, e estou desenvolvendo uma nova tecnologia para auxiliar a equipe de enfermagem na prevenção de lesões por pressão (escaras).</p>
+                    <p>Sua experiência prática é fundamental para garantir que estamos criando algo que realmente ajuda. Este formulário leva <strong>menos de 5 minutos</strong>. Suas respostas são anônimas e confidenciais. Agradeço imensamente sua colaboração!</p>
+                </div>
+
+                <hr class="my-6">
+
+                <!-- Formulário principal da pesquisa -->
+                <form id="survey-form" action="https://formspree.io/f/xyznnkle" method="POST">
+                    
+                    <!-- Seção 1 -->
+                    <fieldset class="mb-8">
+                        <legend class="text-xl font-semibold mb-4 text-slate-800">Seção 1: Sobre Sua Experiência Profissional</legend>
+                        <div class="space-y-6">
+                            <!-- Pergunta 1 -->
+                            <div>
+                                <label class="font-semibold text-slate-700">1. Há quanto tempo você atua na área de enfermagem?</label>
+                                <div class="mt-2 space-y-1">
+                                    <div><label class="font-normal"><input type="radio" name="tempo_experiencia" value="Menos de 1 ano" class="mr-2">Menos de 1 ano</label></div>
+                                    <div><label class="font-normal"><input type="radio" name="tempo_experiencia" value="1 a 5 anos" class="mr-2">1 a 5 anos</label></div>
+                                    <div><label class="font-normal"><input type="radio" name="tempo_experiencia" value="6 a 10 anos" class="mr-2">6 a 10 anos</label></div>
+                                    <div><label class="font-normal"><input type="radio" name="tempo_experiencia" value="Mais de 10 anos" class="mr-2">Mais de 10 anos</label></div>
+                                </div>
+                            </div>
+                            <!-- Pergunta 2 -->
+                            <div>
+                                <label class="font-semibold text-slate-700">2. Em qual tipo de instituição você trabalha principalmente?</label>
+                                <div class="mt-2 space-y-1">
+                                    <div><label class="font-normal"><input type="radio" name="tipo_instituicao" value="Hospital Público" class="mr-2">Hospital Público</label></div>
+                                    <div><label class="font-normal"><input type="radio" name="tipo_instituicao" value="Hospital Privado" class="mr-2">Hospital Privado</label></div>
+                                    <div><label class="font-normal"><input type="radio" name="tipo_instituicao" value="Instituição de Longa Permanência" class="mr-2">Instituição de Longa Permanência (Casa de repouso, asilo)</label></div>
+                                    <div><label class="font-normal"><input type="radio" name="tipo_instituicao" value="Atendimento Domiciliar (Home Care)" class="mr-2">Atendimento Domiciliar (Home Care)</label></div>
+                                    <div><label class="font-normal"><input type="radio" name="tipo_instituicao" value="Outro" class="mr-2">Outro</label></div>
+                                </div>
+                            </div>
+                             <!-- Pergunta 3 -->
+                            <div>
+                                <label class="font-semibold text-slate-700">3. Qual é a sua principal área de atuação?</label>
+                                <div class="mt-2 space-y-1">
+                                    <div><label class="font-normal"><input type="radio" name="area_atuacao" value="UTI" class="mr-2">Unidade de Terapia Intensiva (UTI)</label></div>
+                                    <div><label class="font-normal"><input type="radio" name="area_atuacao" value="Clínica Médica / Cirúrgica" class="mr-2">Clínica Médica / Cirúrgica</label></div>
+                                    <div><label class="font-normal"><input type="radio" name="area_atuacao" value="Pronto-Socorro / Emergência" class="mr-2">Pronto-Socorro / Emergência</label></div>
+                                    <div><label class="font-normal"><input type="radio" name="area_atuacao" value="Geriatria" class="mr-2">Geriatria</label></div>
+                                    <div><label class="font-normal"><input type="radio" name="area_atuacao" value="Outro" class="mr-2">Outro</label></div>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <!-- Seção 2 -->
+                    <fieldset class="mb-8">
+                        <legend class="text-xl font-semibold mb-4 text-slate-800">Seção 2: A Realidade da Prevenção de Lesões por Pressão (LPs)</legend>
+                         <div class="space-y-6">
+                            <!-- Pergunta 4 -->
+                            <div>
+                                <label class="font-semibold text-slate-700">4. Em um turno normal, com que frequência a tarefa de reposicionar um paciente para prevenir LPs exige a ajuda de mais de um profissional?</label>
+                                <div class="mt-2 space-y-1">
+                                    <div><label class="font-normal"><input type="radio" name="ajuda_reposicionar" value="Quase sempre" class="mr-2">Quase sempre</label></div>
+                                    <div><label class="font-normal"><input type="radio" name="ajuda_reposicionar" value="Frequentemente" class="mr-2">Frequentemente</label></div>
+                                    <div><label class="font-normal"><input type="radio" name="ajuda_reposicionar" value="Às vezes" class="mr-2">Às vezes</label></div>
+                                    <div><label class="font-normal"><input type="radio" name="ajuda_reposicionar" value="Raramente ou nunca" class="mr-2">Raramente ou nunca</label></div>
+                                </div>
+                            </div>
+                            <!-- Pergunta 5 -->
+                            <div>
+                                <label class="font-semibold text-slate-700">5. Em uma escala de 1 a 5, qual o seu nível de frustração com o processo atual de prevenção de LPs?</label>
+                                <div class="mt-2 flex justify-between items-center px-1">
+                                    <span>1 (Nada)</span>
+                                    <label><input type="radio" name="nivel_frustracao" value="1" class="mx-2"></label>
+                                    <label><input type="radio" name="nivel_frustracao" value="2" class="mx-2"></label>
+                                    <label><input type="radio" name="nivel_frustracao" value="3" class="mx-2"></label>
+                                    <label><input type="radio" name="nivel_frustracao" value="4" class="mx-2"></label>
+                                    <label><input type="radio" name="nivel_frustracao" value="5" class="mx-2"></label>
+                                    <span>5 (Extremamente)</span>
+                                </div>
+                            </div>
+                            <!-- Pergunta 6 -->
+                            <div>
+                                <label for="maior_dificuldade" class="font-semibold text-slate-700">6. (Opcional) Em poucas palavras, qual a sua MAIOR dificuldade ou desafio nesse processo?</label>
+                                <textarea id="maior_dificuldade" name="maior_dificuldade" rows="3" class="mt-2 w-full p-2 border border-slate-300 rounded-md focus:ring-2 focus:ring-sky-500 focus:border-sky-500"></textarea>
+                            </div>
+                        </div>
+                    </fieldset>
+                    
+                    <!-- Seção 3 -->
+                    <fieldset class="mb-8">
+                        <legend class="text-xl font-semibold mb-4 text-slate-800">Seção 3: Feedback sobre uma Nova Solução</legend>
+                        <div class="bg-slate-100 p-4 rounded-md mb-6">
+                            <p class="text-slate-700">"Agora, gostaríamos da sua opinião sobre uma nova tecnologia. Imagine um sistema com uma camada de sensores no leito que monitora a pressão 24h por dia e acende uma luz de alerta na área do corpo do paciente que está em risco, indicando a necessidade de atenção."</p>
+                        </div>
+                         <div class="space-y-6">
+                            <!-- Pergunta 7 -->
+                            <div>
+                                <label class="font-semibold text-slate-700">7. Em uma escala de 1 a 5, o quão útil você acredita que um sistema de alerta como este seria no seu dia a dia?</label>
+                                <div class="mt-2 flex justify-between items-center px-1">
+                                    <span>1 (Inútil)</span>
+                                    <label><input type="radio" name="utilidade_sistema" value="1" class="mx-2"></label>
+                                    <label><input type="radio" name="utilidade_sistema" value="2" class="mx-2"></label>
+                                    <label><input type="radio" name="utilidade_sistema" value="3" class="mx-2"></label>
+                                    <label><input type="radio" name="utilidade_sistema" value="4" class="mx-2"></label>
+                                    <label><input type="radio" name="utilidade_sistema" value="5" class="mx-2"></label>
+                                    <span>5 (Extremamente útil)</span>
+                                </div>
+                            </div>
+                            <!-- Pergunta 8 -->
+                            <div>
+                                <label class="font-semibold text-slate-700">8. A primeira versão deste sistema funcionaria de forma autônoma (sem conexão com o prontuário eletrônico). Essa abordagem inicial já seria valiosa para você?</label>
+                                <div class="mt-2 space-y-1">
+                                    <div><label class="font-normal"><input type="radio" name="valor_sem_conexao" value="Sim, muito útil" class="mr-2">Sim, seria muito útil mesmo sem a conexão.</label></div>
+                                    <div><label class="font-normal"><input type="radio" name="valor_sem_conexao" value="Útil, mas com desvantagem" class="mr-2">Seria útil, mas a falta de integração é uma grande desvantagem.</label></div>
+                                    <div><label class="font-normal"><input type="radio" name="valor_sem_conexao" value="Não, imprático" class="mr-2">Não, sem integração com o prontuário, não seria prático.</label></div>
+                                </div>
+                            </div>
+                            <!-- Pergunta 9 -->
+                             <div>
+                                <label class="font-semibold text-slate-700">9. Além de alertar sobre o risco de lesões, qual outra informação em tempo real sobre o paciente no leito seria MAIS valiosa para você?</label>
+                                <div class="mt-2 space-y-1">
+                                    <div><label class="font-normal"><input type="radio" name="outra_informacao" value="Risco de queda" class="mr-2">Saber se o paciente se levantou da cama (risco de queda).</label></div>
+                                    <div><label class="font-normal"><input type="radio" name="outra_informacao" value="Padrões de agitação/sono" class="mr-2">Padrões de agitação ou sono do paciente.</label></div>
+                                    <div><label class="font-normal"><input type="radio" name="outra_informacao" value="Leito ocupado/livre" class="mr-2">Ter certeza se o leito está ocupado ou livre, para gestão de vagas.</label></div>
+                                    <div><label class="font-normal"><input type="radio" name="outra_informacao" value="Nenhuma, foco em lesões" class="mr-2">Nenhuma das anteriores, o foco em lesões já é o mais importante.</label></div>
+                                </div>
+                            </div>
+                         </div>
+                    </fieldset>
+
+                     <!-- Seção 4 -->
+                    <fieldset>
+                        <legend class="text-xl font-semibold mb-4 text-slate-800">Seção 4: Próximos Passos</legend>
+                         <div class="space-y-6">
+                            <!-- Pergunta 10 -->
+                             <div>
+                                <label class="font-semibold text-slate-700">10. Você teria interesse em ser contatado(a) no futuro para conhecer o protótipo ou participar de um teste piloto?</label>
+                                <div class="mt-2 space-y-1">
+                                    <div><label class="font-normal"><input type="radio" name="interesse_contato" value="Sim" class="mr-2">Sim</label></div>
+                                    <div><label class="font-normal"><input type="radio" name="interesse_contato" value="Não" class="mr-2">Não</label></div>
+                                </div>
+                            </div>
+                            <!-- Pergunta 11 -->
+                            <div>
+                                <label for="email_contato" class="font-semibold text-slate-700">11. Se você respondeu "Sim", por favor, deixe seu e-mail (opcional). Garantimos total confidencialidade.</label>
+                                <input type="email" id="email_contato" name="email_contato" class="mt-2 w-full p-2 border border-slate-300 rounded-md focus:ring-2 focus:ring-sky-500 focus:border-sky-500" placeholder="seu.email@exemplo.com">
+                            </div>
+                         </div>
+                    </fieldset>
+
+                    <div class="mt-8 pt-6 border-t border-slate-200">
+                        <p class="text-center text-slate-800 mb-4">Sua contribuição é extremamente valiosa. Muito obrigado por ajudar a construir o futuro do cuidado ao paciente!</p>
+                        <div class="flex flex-col sm:flex-row gap-4">
+                             <button type="button" id="print-survey-btn" class="w-full sm:w-auto bg-slate-200 text-slate-800 font-bold py-3 px-6 rounded-lg text-lg hover:bg-slate-300 transition-colors">
+                                Imprimir Pesquisa
+                            </button>
+                            <button type="submit" class="w-full sm:flex-1 bg-sky-600 text-white font-bold py-3 px-6 rounded-lg text-lg hover:bg-sky-700 transition-colors">
+                                Enviar Respostas
+                            </button>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <!-- 
+        INSTRUÇÕES PARA NOTIFICAÇÃO DE CLIQUE:
+        1. Vá para sua conta no https://formspree.io/
+        2. Crie um SEGUNDO formulário, diferente do usado para a pesquisa.
+        3. Dê um nome a ele, como "Notificação de Clique - Previto".
+        4. Pegue o novo endpoint (ex: "https://formspree.io/f/yyyyyyyy").
+        5. Cole esse NOVO endpoint no atributo 'action' do formulário com id="click-notification-form" abaixo.
+        
+        Isso fará com que você receba um e-mail simples toda vez que alguém ABRIR a pesquisa.
+    -->
+    <form id="click-notification-form" action="https://formspree.io/f/xeorrevk" method="POST" class="hidden">
+        <input type="hidden" name="notificacao" value="Alguém clicou para iniciar a pesquisa.">
+    </form>
+    
+    <script>
+        const openBtn = document.getElementById('open-survey-btn');
+        const closeBtn = document.getElementById('close-survey-btn');
+        const modal = document.getElementById('survey-modal');
+        const modalContent = modal.querySelector('.modal-content');
+
+        const openModal = () => {
+            // Notifica o clique no botão enviando o formulário oculto
+            const notificationForm = document.getElementById('click-notification-form');
+            // Verifica se o usuário colocou uma action no formulário de notificação
+            if (notificationForm.action && !notificationForm.action.includes('your-second-unique-id')) {
+                fetch(notificationForm.action, {
+                    method: 'POST',
+                    body: new FormData(notificationForm),
+                    headers: { 'Accept': 'application/json' }
+                }).catch(error => console.error('Erro ao enviar notificação de clique:', error));
+            }
+
+            // Abre o modal da pesquisa
+            modal.classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+            setTimeout(() => {
+                modal.classList.remove('opacity-0');
+                modalContent.classList.remove('scale-95');
+            }, 10);
+        };
+
+        const closeModal = () => {
+            modal.classList.add('opacity-0');
+            modalContent.classList.add('scale-95');
+            document.body.style.overflow = '';
+             setTimeout(() => {
+                modal.classList.add('hidden');
+            }, 300);
+        };
+
+        openBtn.addEventListener('click', openModal);
+        closeBtn.addEventListener('click', closeModal);
+
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                closeModal();
+            }
+        });
+
+        // Prepara o modal para a transição
+        modal.classList.add('opacity-0');
+        modalContent.classList.add('scale-95');
+
+        const printBtn = document.getElementById('print-survey-btn');
+
+        const printSurvey = () => {
+            const printWindow = window.open('pesquisa-impressao.html', '_blank');
+            printWindow.onload = function() {
+                setTimeout(function() { 
+                    printWindow.print();
+                    printWindow.close();
+                }, 250);
+            }
+        };
+
+        printBtn.addEventListener('click', printSurvey);
+
+    </script>
+
+</body>
+</html>
+

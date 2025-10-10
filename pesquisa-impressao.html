@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Pesquisa para Impressão - Previto</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            margin: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+        }
+        h1, h2 {
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+            margin-top: 30px;
+        }
+        .question {
+            margin-bottom: 25px;
+        }
+        .question-title {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .options div {
+            margin-bottom: 8px;
+        }
+        .option-box {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 1px solid #333;
+            margin-right: 10px;
+            vertical-align: middle;
+        }
+        .text-area {
+            border: 1px solid #ccc;
+            width: 99%;
+            height: 100px;
+            margin-top: 10px;
+        }
+        .scale {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 10px;
+        }
+        .scale span {
+            margin: 0 5px;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .header h1 {
+            border-bottom: none;
+            margin: 0;
+            font-size: 28px;
+        }
+        .header p {
+            font-size: 18px;
+            color: #555;
+        }
+        .intro-text {
+            background-color: #f9f9f9;
+            border-left: 4px solid #ccc;
+            padding: 15px;
+            margin-bottom: 30px;
+        }
+        .footer-note {
+            text-align: center;
+            margin-top: 40px;
+            font-style: italic;
+            color: #777;
+        }
+        @media print {
+            body {
+                margin: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Pesquisa para Profissionais de Enfermagem</h1>
+            <p>Inovação no Cuidado ao Paciente (Projeto Previto)</p>
+        </div>
+
+        <div class="intro-text">
+            <p><strong>Olá!</strong> Meu nome é <strong>Norberto Cimirro</strong>, sou Enfermeiro, e estou desenvolvendo uma nova tecnologia para auxiliar a equipe de enfermagem na prevenção de lesões por pressão (escaras).</p>
+            <p>Sua experiência prática é fundamental. Suas respostas são anônimas e confidenciais. Agradeço imensamente sua colaboração!</p>
+        </div>
+
+        <!-- Seção 1 -->
+        <h2>Seção 1: Sobre Sua Experiência Profissional</h2>
+        <div class="question">
+            <p class="question-title">1. Há quanto tempo você atua na área de enfermagem?</p>
+            <div class="options">
+                <div><span class="option-box"></span> Menos de 1 ano</div>
+                <div><span class="option-box"></span> 1 a 5 anos</div>
+                <div><span class="option-box"></span> 6 a 10 anos</div>
+                <div><span class="option-box"></span> Mais de 10 anos</div>
+            </div>
+        </div>
+        <div class="question">
+            <p class="question-title">2. Em qual tipo de instituição você trabalha principalmente?</p>
+            <div class="options">
+                <div><span class="option-box"></span> Hospital Público</div>
+                <div><span class="option-box"></span> Hospital Privado</div>
+                <div><span class="option-box"></span> Instituição de Longa Permanência (Casa de repouso, asilo)</div>
+                <div><span class="option-box"></span> Atendimento Domiciliar (Home Care)</div>
+                <div><span class="option-box"></span> Outro: _________________________</div>
+            </div>
+        </div>
+        <div class="question">
+            <p class="question-title">3. Qual é a sua principal área de atuação?</p>
+            <div class="options">
+                <div><span class="option-box"></span> Unidade de Terapia Intensiva (UTI)</div>
+                <div><span class="option-box"></span> Clínica Médica / Cirúrgica</div>
+                <div><span class="option-box"></span> Pronto-Socorro / Emergência</div>
+                <div><span class="option-box"></span> Geriatria</div>
+                <div><span class="option-box"></span> Outro: _________________________</div>
+            </div>
+        </div>
+
+        <!-- Seção 2 -->
+        <h2>Seção 2: A Realidade da Prevenção de Lesões por Pressão (LPs)</h2>
+        <div class="question">
+            <p class="question-title">4. Em um turno normal, com que frequência a tarefa de reposicionar um paciente para prevenir LPs exige a ajuda de mais de um profissional?</p>
+            <div class="options">
+                <div><span class="option-box"></span> Quase sempre</div>
+                <div><span class="option-box"></span> Frequentemente</div>
+                <div><span class="option-box"></span> Às vezes</div>
+                <div><span class="option-box"></span> Raramente ou nunca</div>
+            </div>
+        </div>
+        <div class="question">
+            <p class="question-title">5. Em uma escala de 1 a 5, qual o seu nível de frustração com o processo atual de prevenção de LPs?</p>
+            <div class="scale">
+                <span>1 (Nada frustrante)</span>
+                <span class="option-box"></span> 1
+                <span class="option-box"></span> 2
+                <span class="option-box"></span> 3
+                <span class="option-box"></span> 4
+                <span class="option-box"></span> 5
+                <span>(Extremamente frustrante)</span>
+            </div>
+        </div>
+        <div class="question">
+            <p class="question-title">6. (Opcional) Em poucas palavras, qual a sua MAIOR dificuldade ou desafio nesse processo?</p>
+            <div class="text-area"></div>
+        </div>
+        
+        <!-- Seção 3 -->
+        <h2>Seção 3: Feedback sobre uma Nova Solução</h2>
+        <div class="intro-text">
+             <p>"Agora, gostaríamos da sua opinião sobre uma nova tecnologia. Imagine um sistema com uma camada de sensores no leito que monitora a pressão 24h por dia e acende uma luz de alerta na área do corpo do paciente que está em risco, indicando a necessidade de atenção."</p>
+        </div>
+        <div class="question">
+            <p class="question-title">7. Em uma escala de 1 a 5, o quão útil você acredita que um sistema de alerta como este seria no seu dia a dia?</p>
+             <div class="scale">
+                <span>1 (Inútil)</span>
+                <span class="option-box"></span> 1
+                <span class="option-box"></span> 2
+                <span class="option-box"></span> 3
+                <span class="option-box"></span> 4
+                <span class="option-box"></span> 5
+                <span>(Extremamente útil)</span>
+            </div>
+        </div>
+        <div class="question">
+             <p class="question-title">8. A primeira versão deste sistema funcionaria de forma autônoma (sem conexão com o prontuário eletrônico). Essa abordagem inicial já seria valiosa para você?</p>
+             <div class="options">
+                 <div><span class="option-box"></span> Sim, seria muito útil mesmo sem a conexão.</div>
+                 <div><span class="option-box"></span> Seria útil, mas a falta de integração é uma grande desvantagem.</div>
+                 <div><span class="option-box"></span> Não, sem integração com o prontuário, não seria prático.</div>
+             </div>
+        </div>
+        <div class="question">
+            <p class="question-title">9. Além de alertar sobre o risco de lesões, qual outra informação em tempo real sobre o paciente no leito seria MAIS valiosa para você?</p>
+             <div class="options">
+                 <div><span class="option-box"></span> Saber se o paciente se levantou da cama (risco de queda).</div>
+                 <div><span class="option-box"></span> Padrões de agitação ou sono do paciente.</div>
+                 <div><span class="option-box"></span> Ter certeza se o leito está ocupado ou livre, para gestão de vagas.</div>
+                 <div><span class="option-box"></span> Nenhuma das anteriores, o foco em lesões já é o mais importante.</div>
+             </div>
+        </div>
+        
+        <!-- Seção 4 -->
+        <h2>Seção 4: Próximos Passos</h2>
+        <div class="question">
+            <p class="question-title">10. Você teria interesse em ser contatado(a) no futuro para conhecer o protótipo ou participar de um teste piloto?</p>
+            <div class="options">
+                 <div><span class="option-box"></span> Sim</div>
+                 <div><span class="option-box"></span> Não</div>
+             </div>
+        </div>
+        <div class="question">
+            <p class="question-title">11. Se você respondeu "Sim", por favor, deixe seu e-mail (opcional). Garantimos total confidencialidade.</p>
+            <div style="border-bottom: 1px solid #333; height: 30px; margin-top: 10px;"></div>
+        </div>
+
+        <p class="footer-note">Sua contribuição é extremamente valiosa. Muito obrigado por ajudar a construir o futuro do cuidado ao paciente!</p>
+
+    </div>
+</body>
+</html>
