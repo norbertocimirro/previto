@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Previto - A Plataforma de Dados para a Segurança do Paciente</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        .gradient-hero {
+            background: #050816;
+            background-image: radial-gradient(at 27% 37%, hsla(215, 98%, 61%, 0.1) 0px, transparent 50%), radial-gradient(at 77% 82%, hsla(203, 76%, 52%, 0.1) 0px, transparent 50%);
+        }
+        .gradient-cta {
+            background: linear-gradient(135deg, #0c4a6e 0%, #0284c7 100%);
+        }
+        .highlight-text {
+            background: -webkit-linear-gradient(45deg, #38bdf8, #0ea5e9);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .card-hover {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+        }
+        /* Estilos para animações do ScrollReveal */
+        .reveal {
+            visibility: hidden;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800">
+
+    <!-- Header -->
+    <header class="bg-white/90 backdrop-blur-lg shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" aria-label="Página inicial Previto">
+                <img src="logo2.png" alt="Logo da Previto" class="h-10">
+            </a>
+            <a href="#invest" class="bg-sky-600 text-white font-bold px-5 py-2.5 rounded-lg hover:bg-sky-700 transition-all duration-300 text-sm shadow-md hover:shadow-lg">
+                Junte-se à Ronda Pre-Seed
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <main class="gradient-hero text-white relative overflow-hidden">
+        <div class="container mx-auto px-6 py-24 md:py-32 text-center relative z-10 reveal">
+            <h1 class="text-4xl md:text-6xl font-extrabold mb-4 leading-tight tracking-tighter">
+                Nós convertemos dados de um dos maiores e mais silenciosos custos da saúde em um <span class="highlight-text">ativo estratégico</span> para a gestão e tomada de decisão.
+            </h1>
+            <p class="text-lg md:text-xl text-slate-300 max-w-3xl mx-auto mb-10">
+            A Previto atua no mercado de prevenção de lesões por pressão, avaliado em <strong class="text-white">US$26 bilhões</strong>, estabelecendo uma vantagem competitiva sustentável através de seu dataset proprietário e exclusivo. 
+            </p>
+            <div class="flex justify-center">
+                <a href="#thesis" class="bg-white text-sky-700 font-bold px-8 py-4 rounded-lg text-lg hover:bg-sky-100 transition-transform hover:scale-105 shadow-2xl">
+                    A Tese de Investimento
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Credibility Banner -->
+    <div class="bg-slate-100">
+        <div class="container mx-auto px-6 py-4 text-center text-slate-500 font-semibold reveal">
+            Selecionado para o programa de inovação Santander X Explorer
+        </div>
+    </div>
+    
+    <!-- Traction Section -->
+    <section id="traction" class="bg-white py-16 md:py-20">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12 reveal">
+                <span class="text-sky-600 font-semibold tracking-wider">VALIDAÇÃO PRÉ-PRODUTO</span>
+                <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mt-2">Validação de Mercado Conclusiva.</h2>
+                <p class="mt-4 text-slate-600 max-w-3xl mx-auto">
+                    Investidores investem em validação. Antes de construir, provamos a nossa tese com 28 profissionais de enfermagem com mais de 10 anos de atuação. Os resultados validam a oportunidade.
+                </p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 text-center">
+                <div class="bg-white p-6 rounded-xl shadow-lg border card-hover reveal">
+                    <div class="bg-sky-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-sky-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M14 10h4.764a2 2 0 011.789 2.894l-3.5 7A2 2 0 0115.263 21h-4.017c-.163 0-.326-.02-.485-.06L7 20m7-10V5a2 2 0 00-2-2h-.085a2 2 0 00-1.736.97l-2.738 5.476M7 15h4m-4 0a2 2 0 01-2-2V8a2 2 0 012-2h4.516a2 2 0 011.984 1.738l2.738 5.476" />
+                        </svg>
+                    </div>
+                    <p class="text-5xl font-extrabold highlight-text">93%</p>
+                    <p class="text-slate-700 font-semibold mt-2">Confirmam que a solução é "Extremamente Útil".</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg border card-hover reveal">
+                    <div class="bg-sky-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-sky-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                        </svg>
+                    </div>
+                    <p class="text-5xl font-extrabold highlight-text">82%</p>
+                    <p class="text-slate-700 font-semibold mt-2">Validam a estratégia de MVP, confirmando valor mesmo na versão inicial.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg border card-hover reveal">
+                    <div class="bg-sky-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                         <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-sky-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                    </div>
+                    <p class="text-5xl font-extrabold highlight-text">96%</p>
+                    <p class="text-slate-700 font-semibold mt-2">Expõem ineficiência operacional massiva, provando o ROI da nossa solução.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg border card-hover reveal">
+                    <div class="bg-sky-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-sky-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+                        </svg>
+                    </div>
+                    <p class="text-5xl font-extrabold highlight-text">57%</p>
+                    <p class="text-slate-700 font-semibold mt-2">Apontam a prevenção de quedas como o próximo passo, validando a visão de plataforma.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Investment Thesis -->
+    <section id="thesis" class="bg-slate-100 py-16 md:py-20 overflow-hidden">
+        <div class="container mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+            <div class="text-left reveal">
+                <span class="text-sky-600 font-semibold tracking-wider">A TESE DE INVESTIMENTO</span>
+                <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mt-2">O Ciclo Virtuoso do Nosso Data Moat.</h2>
+                <p class="mt-4 text-slate-600 text-lg">Concorrentes vendem hardware. Nós construímos um ecossistema de dados. Cada leito Previto não só gera um ROI imediato ao prevenir lesões, como também se torna um nó na nossa rede de inteligência, capturando dados anônimos sobre padrões de pressão e movimento.</p>
+                <p class="mt-4 text-slate-600 text-lg">Este ciclo — mais clientes, mais dados, IA mais inteligente, oferta mais forte — cria uma barreira de entrada exponencial. <strong class="text-slate-900">Estamos a construir um ativo que se torna mais valioso a cada novo contrato assinado.</strong></p>
+            </div>
+            <div class="reveal grid grid-cols-2 gap-4">
+                <img src="prototipo.png" alt="[Imagem do protótipo da Previto num colchão hospitalar com LEDs a indicar pontos de pressão]" class="rounded-xl shadow-2xl w-full object-cover aspect-square">
+                <img src="tablet.jpg" alt="[Imagem de uma enfermeira a usar um tablet num ambiente hospitalar moderno]" class="rounded-xl shadow-2xl w-full object-cover aspect-square">
+            </div>
+        </div>
+    </section>
+    
+    <!-- Founder Section -->
+    <section id="founder" class="bg-white py-16 md:py-20">
+        <div class="container mx-auto px-6 text-center">
+             <div class="reveal">
+                <span class="text-sky-600 font-semibold tracking-wider">VANTAGEM INJUSTA</span>
+                <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mt-2">Liderado por Quem Vivência o Problema</h2>
+             </div>
+            <div class="mt-8 max-w-4xl mx-auto bg-slate-50 p-8 rounded-xl shadow-lg border grid md:grid-cols-3 gap-8 items-center reveal">
+                <div class="md:col-span-1">
+                    <img src="cimirro.jpeg" alt="[Retrato profissional de Norberto Cimirro, fundador da Previto]" class="rounded-full w-40 h-40 mx-auto object-cover border-4 border-sky-500 shadow-md">
+                </div>
+                <div class="md:col-span-2 text-left">
+                    <h3 class="text-2xl font-bold text-slate-800">Norberto de Sousa Cimirro, Enfermeiro</h3>
+                    <p class="text-sky-600 font-semibold mt-1">Fundador & CEO</p>
+                    <p class="mt-4 text-slate-600">“Como Enfermeiro, sinto na pele a frustração e a ineficiência dos métodos atuais. Vi equipes sobrecarregadas a lutar contra um problema sistêmico com ferramentas manuais. A Previto não nasceu numa folha de cálculo; nasceu da minha obstinação em resolver uma dor real que conheço intimamente. Esta é a nossa vantagem: compreendemos o utilizador, o comprador e o problema a um nível que a concorrência não consegue.”</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- The Ask Section -->
+    <section id="ask" class="bg-slate-100 py-16 md:py-20">
+        <div class="container mx-auto px-6 text-center">
+            <div class="reveal">
+                <span class="text-sky-600 font-semibold tracking-wider">O NOSSO PEDIDO (THE ASK)</span>
+                <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mt-2">€50.000 para Dominar o Mercado.</h2>
+                <p class="mt-4 text-slate-600 max-w-3xl mx-auto">
+                    Estamos a levantar uma ronda Pre-Seed para acelerar a nossa entrada no mercado. O capital será estrategicamente alocado para atingir marcos chave que desbloquearão a nossa próxima avaliação.
+                </p>
+            </div>
+            <div class="mt-10 grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto reveal">
+                <div class="bg-white p-6 rounded-lg border shadow-md text-left">
+                     <div class="bg-sky-100 rounded-full w-12 h-12 flex items-center justify-center mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-sky-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z" /></svg>
+                    </div>
+                    <h3 class="font-bold text-xl text-sky-700">60% - Projetos-Piloto</h3>
+                    <p class="text-slate-600 mt-2">Financiar 3 a 5 implementações em hospitais parceiros para obter métricas de ROI irrefutáveis e casos de estudo para marketing.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg border shadow-md text-left">
+                    <div class="bg-sky-100 rounded-full w-12 h-12 flex items-center justify-center mb-4">
+                       <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-sky-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" /></svg>
+                    </div>
+                    <h3 class="font-bold text-xl text-sky-700">25% - Produto & IP</h3>
+                    <p class="text-slate-600 mt-2">Finalizar o desenvolvimento da versão conectada do MVP e iniciar o processo de registo de patente da nossa tecnologia de sensores.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg border shadow-md text-left">
+                    <div class="bg-sky-100 rounded-full w-12 h-12 flex items-center justify-center mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-sky-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" /><path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
+                    </div>
+                    <h3 class="font-bold text-xl text-sky-700">15% - Operações</h3>
+                    <p class="text-slate-600 mt-2">Custos operacionais e regulatórios, incluindo preparação para a certificação da Anvisa.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="invest" class="gradient-cta text-white">
+         <div class="container mx-auto px-6 py-20 md:py-24 text-center reveal">
+            <h2 class="text-4xl md:text-5xl font-extrabold mb-4">
+                Seja o Investidor que Impulsiona a Próxima Geração de Health Tech.
+            </h2>
+            <p class="text-lg md:text-xl text-sky-100 max-w-3xl mx-auto mb-10">
+                Esta é a oportunidade de entrar no piso térreo de uma empresa com dados validaos, um fosso competitivo claro e um fundador com uma visão única.
+            </p>
+            <div class="bg-white/20 inline-block p-4 rounded-lg border border-white/30">
+                <p class="text-sky-100">Para acessar o nosso data room e deck de investimento completo, contate:</p>
+                <a href="mailto:norbertocimirro@gmail.com" class="text-lg text-white font-bold hover:underline">
+                    norbertocimirro@gmail.com
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-400">
+        <div class="container mx-auto px-6 py-6 text-center text-sm">
+            <p>&copy; 2025 Previto. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        ScrollReveal({
+            reset: false,
+            distance: '60px',
+            duration: 2000,
+            delay: 200
+        });
+
+        ScrollReveal().reveal('.reveal', { delay: 100, origin: 'bottom', interval: 150 });
+    </script>
+
+</body>
+</html>
