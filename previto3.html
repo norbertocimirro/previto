@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-translate="pageTitle">Previto - Transformando Dados em Cuidado e Ativos Estratégicos</title>
+    <meta name="description" content="A Previto converte dados de custos de saúde em ativos estratégicos para gestão, focando na prevenção de lesões por pressão. Buscamos investidores para nossa rodada Pre-Seed." data-translate="metaDescription">
+    <link rel="icon" href="https://placehold.co/32x32/0ea5e9/white?text=P" type="image/png">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        'brand-dark': '#050816',
+                        'sky': { 100: '#e0f2fe', 200: '#bae6fd', 500: '#0ea5e9', 600: '#0284c7', 700: '#0369a1', 900: '#0c4a6e' },
+                        'slate': { 50: '#f8fafc', 100: '#f1f5f9', 300: '#cbd5e1', 500: '#64748b', 600: '#475569', 800: '#1e293b', 900: '#0f172a' },
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+        .gradient-hero { background-color: #050816; background-image: radial-gradient(at 27% 37%, hsla(215, 98%, 61%, 0.1) 0px, transparent 50%), radial-gradient(at 77% 82%, hsla(203, 76%, 52%, 0.1) 0px, transparent 50%); }
+        .gradient-cta { background: linear-gradient(135deg, #0c4a6e 0%, #0284c7 100%); }
+        .highlight-text { background: -webkit-linear-gradient(45deg, #38bdf8, #0ea5e9); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .card-hover { transition: transform 0.3s ease, box-shadow 0.3s ease; }
+        .card-hover:hover { transform: translateY(-10px); box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25); }
+        .header-scrolled { box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1); background-color: rgba(255, 255, 255, 0.95); }
+        .faq-question { cursor: pointer; }
+        .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.5s ease-in-out; }
+        .faq-item.open .faq-answer { max-height: 200px; }
+        .faq-item.open .faq-arrow { transform: rotate(180deg); }
+        .faq-arrow { transition: transform 0.3s ease; }
+        .lang-btn { cursor: pointer; opacity: 0.6; transition: opacity 0.2s ease; }
+        .lang-btn.active { opacity: 1; font-weight: 700; }
+        .lang-btn:hover { opacity: 1; }
+        #cookie-banner { transition: transform 0.5s ease-in-out; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800">
+
+    <header id="header" class="bg-white/80 backdrop-blur-lg sticky top-0 z-50 transition-all duration-300">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" aria-label="Página inicial Previto">
+                <img src="logo4.png" alt="Logo da Previto" class="h-10">
+            </a>
+            <div class="flex items-center gap-4">
+                <div id="lang-switcher" class="flex items-center gap-2 md:gap-3 text-sm text-slate-700">
+                    <span class="lang-btn active" data-lang="pt-BR">PT</span><span class="text-slate-300">|</span>
+                    <span class="lang-btn" data-lang="en">EN</span><span class="text-slate-300">|</span>
+                    <span class="lang-btn" data-lang="es">ES</span>
+                </div>
+                <a href="#invest" class="bg-sky-600 text-white font-bold px-5 py-2.5 rounded-lg hover:bg-sky-700 transition-all duration-300 text-sm shadow-md hover:shadow-lg transform hover:scale-105" data-translate="joinButton">
+                    Junte-se à Rodada Pre-Seed
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="gradient-hero text-white relative overflow-hidden">
+        <div class="container mx-auto px-6 py-24 md:py-36 text-center relative z-10">
+            <h1 class="text-4xl md:text-6xl font-extrabold mb-4 leading-tight tracking-tighter" data-translate="heroTitle">
+                Convertemos o maior custo invisível da saúde em um <span class="highlight-text">ativo estratégico</span> e preditivo.
+            </h1>
+            <p class="text-lg md:text-xl text-slate-300 max-w-3xl mx-auto mb-10" data-translate="heroSubtitle">
+                A Previto atua no mercado de **US$26 bilhões** de prevenção de lesões por pressão, construindo uma vantagem competitiva através de um dataset proprietário e exclusivo.
+            </p>
+            <div class="flex justify-center">
+                <a href="#thesis" class="bg-white text-sky-700 font-bold px-8 py-4 rounded-lg text-lg hover:bg-sky-100 transition-transform hover:scale-105 shadow-2xl" data-translate="heroCTA">
+                    Conheça a Tese
+                </a>
+            </div>
+        </div>
+    </main>
+    
+    <section id="problem" class="bg-white py-16 md:py-20">
+        <div class="container mx-auto px-6 text-center">
+            <span class="text-sky-600 font-semibold tracking-wider" data-translate="problemLabel">O CUSTO DO SILÊNCIO</span>
+            <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mt-2" data-translate="problemTitle">Um Problema Bilionário Escondido à Vista de Todos.</h2>
+            <p class="mt-4 text-slate-600 max-w-3xl mx-auto" data-translate="problemSubtitle">
+                Lesões por pressão não são apenas uma complicação; são uma falha sistêmica com custos devastadores.
+            </p>
+            <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="text-center p-6"><ion-icon name="cash-outline" class="text-5xl text-sky-500 mx-auto"></ion-icon><p class="text-4xl font-extrabold text-slate-900 mt-2">>$<span class="counter" data-target="11">0</span> Bilhões</p><p class="text-slate-600 mt-1" data-translate="problemStat1">Custo anual apenas nos EUA, superando muitas outras condições de saúde conhecidas.</p></div>
+                <div class="text-center p-6"><ion-icon name="people-outline" class="text-5xl text-sky-500 mx-auto"></ion-icon><p class="text-4xl font-extrabold text-slate-900 mt-2"><span class="counter" data-target="60000">0</span> Vidas</p><p class="text-slate-600 mt-1" data-translate="problemStat2">Mortes anuais diretamente atribuídas a lesões por pressão. É uma crise de segurança do paciente.</p></div>
+                <div class="text-center p-6"><ion-icon name="alert-circle-outline" class="text-5xl text-sky-500 mx-auto"></ion-icon><p class="text-4xl font-extrabold text-slate-900 mt-2"><span class="counter" data-target="95">0</span>% Prevenível</p><p class="text-slate-600 mt-1" data-translate="problemStat3">A grande maioria dos casos pode ser evitada com as ferramentas e dados corretos. É aqui que atuamos.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <div class="bg-slate-100">
+        <div class="container mx-auto px-6 py-4 text-center text-slate-500 font-semibold">
+            <p data-translate="santanderBanner">🏅 Selecionado para o programa de inovação <span class="font-bold text-slate-700">Santander X Explorer</span></p>
+        </div>
+    </div>
+    
+    <section id="traction" class="bg-slate-50 py-16 md:py-20">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <span class="text-sky-600 font-semibold tracking-wider" data-translate="tractionLabel">VALIDAÇÃO PRÉ-PRODUTO</span>
+                <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mt-2" data-translate="tractionTitle">Validação de Mercado Conclusiva.</h2>
+                <p class="mt-4 text-slate-600 max-w-3xl mx-auto" data-translate="tractionSubtitle">Investidores investem em validação. Provamos a tese com 28 profissionais de enfermagem com mais de 10 anos de atuação.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 text-center">
+                <div class="bg-white p-6 rounded-xl shadow-lg border card-hover"><ion-icon name="thumbs-up-outline" class="text-4xl text-sky-500 mx-auto mb-3"></ion-icon><p class="text-6xl font-extrabold highlight-text"><span class="counter" data-target="93">0</span>%</p><p class="text-slate-700 font-semibold mt-2" data-translate="tractionStat1">Confirmam que a solução é "Extremamente Útil".</p></div>
+                <div class="bg-white p-6 rounded-xl shadow-lg border card-hover"><ion-icon name="shield-checkmark-outline" class="text-4xl text-sky-500 mx-auto mb-3"></ion-icon><p class="text-6xl font-extrabold highlight-text"><span class="counter" data-target="82">0</span>%</p><p class="text-slate-700 font-semibold mt-2" data-translate="tractionStat2">Validam a estratégia de MVP na versão inicial.</p></div>
+                <div class="bg-white p-6 rounded-xl shadow-lg border card-hover"><ion-icon name="hourglass-outline" class="text-4xl text-sky-500 mx-auto mb-3"></ion-icon><p class="text-6xl font-extrabold highlight-text"><span class="counter" data-target="96">0</span>%</p><p class="text-slate-700 font-semibold mt-2" data-translate="tractionStat3">Expõem ineficiência massiva, provando o nosso ROI.</p></div>
+                <div class="bg-white p-6 rounded-xl shadow-lg border card-hover"><ion-icon name="git-network-outline" class="text-4xl text-sky-500 mx-auto mb-3"></ion-icon><p class="text-6xl font-extrabold highlight-text"><span class="counter" data-target="57">0</span>%</p><p class="text-slate-700 font-semibold mt-2" data-translate="tractionStat4">Apontam prevenção de quedas como próximo passo.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="bg-white py-16 md:py-20">
+        <div class="container mx-auto px-6 max-w-4xl text-center">
+             <span class="text-sky-600 font-semibold tracking-wider" data-translate="testimonialLabel">VOZES DO CAMPO</span>
+            <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mt-2" data-translate="testimonialTitle">O Que Dizem os Especialistas.</h2>
+            <div class="mt-12 bg-slate-50 p-8 rounded-xl shadow-lg border relative">
+                <ion-icon name="chatbubble-ellipses-outline" class="absolute -top-6 left-1/2 -translate-x-1/2 text-5xl text-sky-300"></ion-icon>
+                <blockquote class="text-xl md:text-2xl font-medium text-slate-700 italic" data-translate="testimonialQuote">“Isto não é apenas uma melhoria, é uma transformação. Ter dados que nos dizem onde e quando atuar antes que uma lesão se forme mudaria completamente a nossa forma de trabalhar. Reduziria o stress da equipe e, mais importante, salvaria a pele dos nossos pacientes.”</blockquote>
+                <cite class="mt-6 block not-italic"><p class="font-bold text-slate-800" data-translate="testimonialName">Enfermeira M. S., Chefe de Unidade</p><p class="text-slate-500" data-translate="testimonialRole">15+ anos de experiência em cuidados intensivos</p></cite>
+            </div>
+        </div>
+    </section>
+    
+    <section id="thesis" class="bg-slate-50 py-16 md:py-20 overflow-hidden">
+        <div class="container mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
+            <div class="text-left">
+                <span class="text-sky-600 font-semibold tracking-wider" data-translate="thesisLabel">A TESE DE INVESTIMENTO</span>
+                <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mt-2" data-translate="thesisTitle">Nosso Data Moat: Um Ciclo Virtuoso.</h2>
+                <p class="mt-4 text-slate-600 text-lg" data-translate="thesisSubtitle">Concorrentes vendem hardware. Nós construímos um ecossistema de dados. Cada leito Previto não só gera ROI, como se torna um nó em nossa rede de inteligência que cria uma barreira de entrada exponencial.</p>
+                <div class="mt-8 space-y-4">
+                    <div class="flex items-center text-center gap-2">
+                        <div class="flex-1 p-3 bg-white border border-sky-200 rounded-lg"><p class="font-bold text-sky-900" data-translate="thesisCycle1">Mais Clientes</p></div><ion-icon name="arrow-forward-outline" class="text-2xl text-sky-400"></ion-icon>
+                        <div class="flex-1 p-3 bg-white border border-sky-200 rounded-lg"><p class="font-bold text-sky-900" data-translate="thesisCycle2">Mais Dados</p></div><ion-icon name="arrow-forward-outline" class="text-2xl text-sky-400"></ion-icon>
+                        <div class="flex-1 p-3 bg-white border border-sky-200 rounded-lg"><p class="font-bold text-sky-900" data-translate="thesisCycle3">IA Mais Forte</p></div>
+                    </div>
+                     <p class="text-center text-lg font-semibold text-slate-700" data-translate="thesisResult">→ <span class="highlight-text">Oferta Superior & Vantagem Competitiva</span></p>
+                </div>
+            </div>
+            <div><img src="dashboard.jpeg" alt="Demonstração do dashboard da Previto em um tablet" class="rounded-xl shadow-2xl w-full object-cover"></div>
+        </div>
+    </section>
+
+    <section id="how-it-works" class="bg-white py-16 md:py-20">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <span class="text-sky-600 font-semibold tracking-wider" data-translate="howLabel">NOSSA TECNOLOGIA</span>
+                <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mt-2" data-translate="howTitle">Simples, Inteligente e Preditivo.</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center max-w-5xl mx-auto">
+                <div class="flex flex-col items-center"><div class="bg-slate-100 rounded-full w-24 h-24 flex items-center justify-center shadow-lg border mb-4"><ion-icon name="analytics-outline" class="text-5xl text-sky-600"></ion-icon></div><h3 class="text-xl font-bold text-slate-800" data-translate="howStep1Title">1. Coleta Contínua</h3><p class="text-slate-600 mt-2" data-translate="howStep1Desc">Nossos sensores discretos no leito capturam milhares de pontos de dados de pressão e movimento por segundo, de forma anônima e segura.</p></div>
+                <div class="flex flex-col items-center"><div class="bg-slate-100 rounded-full w-24 h-24 flex items-center justify-center shadow-lg border mb-4"><ion-icon name="cog-outline" class="text-5xl text-sky-600"></ion-icon></div><h3 class="text-xl font-bold text-slate-800" data-translate="howStep2Title">2. Análise Preditiva</h3><p class="text-slate-600 mt-2" data-translate="howStep2Desc">Nossa IA analisa os dados em tempo real, identificando padrões de risco muito antes de serem visíveis ao olho humano.</p></div>
+                <div class="flex flex-col items-center"><div class="bg-slate-100 rounded-full w-24 h-24 flex items-center justify-center shadow-lg border mb-4"><ion-icon name="notifications-outline" class="text-5xl text-sky-600"></ion-icon></div><h3 class="text-xl font-bold text-slate-800" data-translate="howStep3Title">3. Alertas Inteligentes</h3><p class="text-slate-600 mt-2" data-translate="howStep3Desc">A equipe de enfermagem recebe alertas simples e acionáveis em seus dispositivos, indicando qual paciente precisa de atenção e porquê.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MELHORIA: Seção "Porquê Agora?" -->
+    <section id="why-now" class="bg-slate-50 py-16 md:py-20">
+        <div class="container mx-auto px-6 text-center">
+            <span class="text-sky-600 font-semibold tracking-wider" data-translate="whyNowLabel">O MOMENTO É AGORA</span>
+            <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mt-2" data-translate="whyNowTitle">Uma Tempestade Perfeita de Oportunidades.</h2>
+            <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-10 max-w-6xl mx-auto">
+                <div class="bg-white p-8 rounded-lg border text-left card-hover">
+                    <div class="flex items-center gap-4 mb-4"><ion-icon name="hardware-chip-outline" class="text-4xl text-sky-600"></ion-icon><h3 class="font-bold text-xl text-sky-700" data-translate="whyNow1Title">Tecnologia Madura</h3></div>
+                    <p class="text-slate-600" data-translate="whyNow1Desc">O baixo custo e a alta precisão dos sensores IoT, aliados ao poder da cloud e da IA, tornam a nossa solução economicamente viável e escalável pela primeira vez na história.</p>
+                </div>
+                <div class="bg-white p-8 rounded-lg border text-left card-hover">
+                    <div class="flex items-center gap-4 mb-4"><ion-icon name="trending-up-outline" class="text-4xl text-sky-600"></ion-icon><h3 class="font-bold text-xl text-sky-700" data-translate="whyNow2Title">Mercado Receptivo</h3></div>
+                    <p class="text-slate-600" data-translate="whyNow2Desc">Hospitais estão sob pressão para otimizar custos e adotar modelos de "value-based care". Soluções com ROI claro, como a Previto, são prioridade máxima.</p>
+                </div>
+                <div class="bg-white p-8 rounded-lg border text-left card-hover">
+                    <div class="flex items-center gap-4 mb-4"><ion-icon name="shield-checkmark-outline" class="text-4xl text-sky-600"></ion-icon><h3 class="font-bold text-xl text-sky-700" data-translate="whyNow3Title">Pressão Regulatória</h3></div>
+                    <p class="text-slate-600" data-translate="whyNow3Desc">Órgãos reguladores em todo o mundo estão a aumentar as penalizações por condições adquiridas no hospital, criando uma forte urgência para a adoção de tecnologias de prevenção.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="founder" class="bg-white py-16 md:py-20">
+        <div class="container mx-auto px-6 text-center">
+            <span class="text-sky-600 font-semibold tracking-wider" data-translate="founderLabel">VANTAGEM INJUSTA</span>
+            <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mt-2" data-translate="founderTitle">Liderado por Quem Vivencia o Problema</h2>
+            <div class="mt-12 max-w-4xl mx-auto bg-slate-50 p-8 rounded-xl shadow-lg border flex flex-col md:flex-row gap-8 items-center">
+                <img src="cimirro.jpeg" alt="Retrato profissional de Norberto Cimirro" class="rounded-full w-40 h-40 object-cover border-4 border-sky-500 shadow-md flex-shrink-0">
+                <div class="text-left">
+                    <h3 class="text-2xl font-bold text-slate-800">Norberto de Sousa Cimirro, Enfermeiro</h3>
+                    <div class="flex items-center gap-2 mt-1">
+                        <p class="text-sky-600 font-semibold" data-translate="founderRole">Fundador & CEO</p>
+                        <a href="https://www.linkedin.com/in/enfermeirocimirro" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-sky-600 transition-colors flex items-center"><ion-icon name="logo-linkedin" class="text-xl"></ion-icon></a>
+                    </div>
+                    <p class="mt-4 text-slate-600 italic" data-translate="founderQuote">“A Previto não nasceu numa planilha; nasceu da minha obstinação em resolver uma dor real que conheço intimamente. Esta é a nossa vantagem: entendemos o usuário, o comprador e o problema a um nível que a concorrência não consegue.”</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="ask" class="bg-slate-50 py-16 md:py-20">
+        <div class="container mx-auto px-6 text-center">
+            <span class="text-sky-600 font-semibold tracking-wider" data-translate="askLabel">O NOSSO PEDIDO (THE ASK)</span>
+            <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mt-2" data-translate="askTitle">€50.000 para Dominar o Mercado.</h2>
+            <p class="mt-4 text-slate-600 max-w-3xl mx-auto" data-translate="askSubtitle">Buscamos capital para uma rodada Pre-Seed que irá financiar os marcos chave para desbloquear nossa próxima avaliação e escala.</p>
+            <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                <div class="bg-white p-6 rounded-lg border text-left card-hover"><div class="flex items-center gap-4"><ion-icon name="document-text-outline" class="text-3xl text-sky-600"></ion-icon><h3 class="font-bold text-xl text-sky-700" data-translate="askItem1Title">Projetos-Piloto (60%)</h3></div><p class="text-slate-600 mt-2" data-translate="askItem1Desc">Financiar 3-5 implementações para obter métricas de ROI irrefutáveis e casos de estudo para marketing.</p></div>
+                <div class="bg-white p-6 rounded-lg border text-left card-hover"><div class="flex items-center gap-4"><ion-icon name="bulb-outline" class="text-3xl text-sky-600"></ion-icon><h3 class="font-bold text-xl text-sky-700" data-translate="askItem2Title">Produto & IP (25%)</h3></div><p class="text-slate-600 mt-2" data-translate="askItem2Desc">Finalizar o MVP conectado e iniciar o registo de patente da nossa tecnologia de sensores.</p></div>
+                <div class="bg-white p-6 rounded-lg border text-left card-hover"><div class="flex items-center gap-4"><ion-icon name="settings-outline" class="text-3xl text-sky-600"></ion-icon><h3 class="font-bold text-xl text-sky-700" data-translate="askItem3Title">Operações (15%)</h3></div><p class="text-slate-600 mt-2" data-translate="askItem3Desc">Custos operacionais, regulatórios e preparação para certificação (ex: Anvisa).</p></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="roadmap" class="bg-white py-16 md:py-20">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12"><span class="text-sky-600 font-semibold tracking-wider" data-translate="roadmapLabel">NOSSA JORNADA</span><h2 class="text-3xl md:text-4xl font-bold text-slate-900 mt-2" data-translate="roadmapTitle">Construindo o Futuro da Prevenção.</h2></div>
+            <div class="relative max-w-4xl mx-auto"><div class="absolute left-1/2 -translate-x-1/2 h-full w-0.5 bg-sky-200"></div><div class="relative grid gap-12">
+                <div class="flex items-center gap-8"><div class="w-1/2 text-right"><h3 class="font-bold text-xl text-slate-800" data-translate="roadmapStep1Title">Validação e Pesquisa</h3><p class="text-slate-600" data-translate="roadmapStep1Desc">28 entrevistas com especialistas, validação do problema e da solução.</p><span class="text-sm font-bold text-sky-600" data-translate="roadmapStep1Status">CONCLUÍDO</span></div><div class="w-10 h-10 bg-sky-600 rounded-full flex items-center justify-center text-white z-10 flex-shrink-0"><ion-icon name="checkmark-done-outline"></ion-icon></div><div class="w-1/2"></div></div>
+                <div class="flex items-center gap-8"><div class="w-1/2"></div><div class="w-10 h-10 bg-sky-600 rounded-full flex items-center justify-center text-white z-10 flex-shrink-0"><ion-icon name="rocket-outline"></ion-icon></div><div class="w-1/2 text-left"><h3 class="font-bold text-xl text-slate-800" data-translate="roadmapStep2Title">Rodada Pre-Seed (€50k)</h3><p class="text-slate-600" data-translate="roadmapStep2Desc">Execução dos projetos-piloto, finalização do MVP e proteção de IP.</p><span class="text-sm font-bold text-yellow-600" data-translate="roadmapStep2Status">VOCÊ ESTÁ AQUI</span></div></div>
+                <div class="flex items-center gap-8"><div class="w-1/2 text-right"><h3 class="font-bold text-xl text-slate-800" data-translate="roadmapStep3Title">Escala e Rodada Seed</h3><p class="text-slate-600" data-translate="roadmapStep3Desc">Expandir para 20+ hospitais, otimizar a IA com dados dos pilotos e levantar rodada Seed.</p><span class="text-sm font-bold text-slate-500" data-translate="roadmapStep3Status">PRÓXIMO PASSO</span></div><div class="w-10 h-10 bg-slate-300 rounded-full flex items-center justify-center text-slate-600 z-10 flex-shrink-0"><ion-icon name="flag-outline"></ion-icon></div><div class="w-1/2"></div></div>
+            </div></div>
+        </div>
+    </section>
+
+    <section id="faq" class="bg-slate-50 py-16 md:py-20">
+        <div class="container mx-auto px-6 max-w-4xl">
+            <div class="text-center mb-12"><span class="text-sky-600 font-semibold tracking-wider" data-translate="faqLabel">PERGUNTAS FREQUENTES</span><h2 class="text-3xl md:text-4xl font-bold text-slate-900 mt-2" data-translate="faqTitle">Respondendo às Suas Dúvidas.</h2></div>
+            <div class="space-y-4">
+                <div class="faq-item bg-white border rounded-lg p-5"><div class="faq-question flex justify-between items-center"><h3 class="font-semibold text-lg text-slate-800" data-translate="faq1Title">Qual é o modelo de negócio?</h3><ion-icon name="chevron-down-outline" class="faq-arrow text-2xl text-sky-600"></ion-icon></div><div class="faq-answer pt-4 text-slate-600"><p data-translate="faq1Desc">Nosso modelo é B2B SaaS (Software as a Service). Cobramos uma assinatura mensal por leito monitorado, o que garante receita recorrente e alinha nosso sucesso com o ROI do cliente. O hardware é fornecido como parte do serviço.</p></div></div>
+                <div class="faq-item bg-white border rounded-lg p-5"><div class="faq-question flex justify-between items-center"><h3 class="font-semibold text-lg text-slate-800" data-translate="faq2Title">Como a tecnologia está protegida?</h3><ion-icon name="chevron-down-outline" class="faq-arrow text-2xl text-sky-600"></ion-icon></div><div class="faq-answer pt-4 text-slate-600"><p data-translate="faq2Desc">Estamos a iniciar o processo de registo de patente para a nossa tecnologia de sensores e para os algoritmos de análise de dados. Além disso, nosso principal ativo é o dataset proprietário, que cria uma barreira competitiva que se fortalece com o tempo.</p></div></div>
+                <div class="faq-item bg-white border rounded-lg p-5"><div class="faq-question flex justify-between items-center"><h3 class="font-semibold text-lg text-slate-800" data-translate="faq3Title">Quem são os concorrentes?</h3><ion-icon name="chevron-down-outline" class="faq-arrow text-2xl text-sky-600"></ion-icon></div><div class="faq-answer pt-4 text-slate-600"><p data-translate="faq3Desc">Os concorrentes atuais focam principalmente em "hardware inteligente", como colchões de alívio de pressão. A nossa abordagem é fundamentalmente diferente: somos uma empresa de dados. Nossa vantagem não está no hardware, mas na inteligência que extraímos dele, criando um ecossistema de prevenção.</p></div></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="invest" class="gradient-cta text-white">
+        <div class="container mx-auto px-6 py-20 md:py-24">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="text-center md:text-left">
+                    <h2 class="text-4xl md:text-5xl font-extrabold mb-4" data-translate="ctaTitle">Vamos Conversar.</h2>
+                    <p class="text-lg text-sky-100 mb-8" data-translate="ctaSubtitle">Esta é a oportunidade de entrar no piso térreo de uma empresa com dados validados e um fosso competitivo claro. Para acessar o data room ou agendar uma reunião, use uma das opções abaixo.</p>
+                    <div class="bg-white/20 inline-flex flex-col items-start gap-4 p-6 rounded-lg border border-white/30">
+                        <p class="text-sky-100 font-semibold" data-translate="directContact">Contato Direto:</p>
+                        <div class="flex items-center gap-4 bg-slate-900/30 rounded-lg pl-4 pr-2 py-2 w-full"><a id="email-link" href="mailto:norbertocimirro@gmail.com" class="text-base md:text-lg text-white font-bold hover:underline truncate">norbertocimirro@gmail.com</a><button id="copy-button" class="bg-white text-sky-700 font-semibold px-3 py-1 rounded-md hover:bg-sky-100 transition-all text-sm flex-shrink-0" data-translate="copyButton">Copiar</button></div>
+                         <p id="copy-feedback" class="text-green-300 h-4 transition-opacity opacity-0 text-sm" data-translate="copyFeedback">E-mail copiado!</p>
+                         <div class="flex items-center gap-4 text-3xl"><a href="https://www.linkedin.com/in/enfermeirocimirro" target="_blank" rel="noopener noreferrer" class="text-white/80 hover:text-white transition-colors" aria-label="LinkedIn"><ion-icon name="logo-linkedin"></ion-icon></a><a href="https://www.instagram.com/previto.tech" target="_blank" rel="noopener noreferrer" class="text-white/80 hover:text-white transition-colors" aria-label="Instagram"><ion-icon name="logo-instagram"></ion-icon></a></div>
+                    </div>
+                </div>
+                <div class="bg-white/10 p-8 rounded-lg border border-white/20 backdrop-blur-sm">
+                    <h3 class="text-2xl font-bold text-white mb-6" data-translate="formTitle">Ou envie uma mensagem</h3>
+                    <form id="contact-form" class="space-y-4">
+                        <div><label for="name" class="block text-sm font-medium text-sky-100" data-translate="formName">Nome</label><input type="text" id="name" name="name" required class="mt-1 block w-full bg-white/20 border-white/30 rounded-md shadow-sm py-2 px-3 text-white placeholder-slate-300 focus:outline-none focus:ring-2 focus:ring-white"></div>
+                        <div><label for="email" class="block text-sm font-medium text-sky-100" data-translate="formEmail">E-mail</label><input type="email" id="email" name="email" required class="mt-1 block w-full bg-white/20 border-white/30 rounded-md shadow-sm py-2 px-3 text-white placeholder-slate-300 focus:outline-none focus:ring-2 focus:ring-white"></div>
+                        <div><label for="message" class="block text-sm font-medium text-sky-100" data-translate="formMessage">Mensagem</label><textarea id="message" name="message" rows="4" required class="mt-1 block w-full bg-white/20 border-white/30 rounded-md shadow-sm py-2 px-3 text-white placeholder-slate-300 focus:outline-none focus:ring-2 focus:ring-white"></textarea></div>
+                        <div><button type="submit" class="w-full bg-white text-sky-700 font-bold px-6 py-3 rounded-lg text-base hover:bg-sky-100 transition-transform hover:scale-105 shadow-2xl" data-translate="formSubmit">Enviar Mensagem</button></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-slate-900 text-slate-400">
+        <div class="container mx-auto px-6 py-8 text-center">
+            <div class="flex justify-center gap-8 mb-6"><a href="https://www.linkedin.com/in/enfermeirocimirro" target="_blank" rel="noopener noreferrer" class="text-3xl text-slate-400 hover:text-white transition-colors" aria-label="LinkedIn de Norberto Cimirro"><ion-icon name="logo-linkedin"></ion-icon></a><a href="https://www.instagram.com/previto.tech" target="_blank" rel="noopener noreferrer" class="text-3xl text-slate-400 hover:text-white transition-colors" aria-label="Instagram da Previto"><ion-icon name="logo-instagram"></ion-icon></a></div>
+            <p class="text-sm" data-translate="footerRights">&copy; 2025 Previto. Todos os direitos reservados.</p>
+            <div class="mt-4 flex justify-center gap-6 text-xs"><a href="#" class="hover:text-white transition" data-translate="footerPrivacy">Política de Privacidade</a><a href="#" class="hover:text-white transition" data-translate="footerTerms">Termos de Uso</a></div>
+        </div>
+    </footer>
+
+    <div id="cookie-banner" class="fixed bottom-0 left-0 right-0 bg-slate-800 text-white p-4 flex flex-col md:flex-row justify-between items-center gap-4 shadow-2xl translate-y-full">
+        <p class="text-sm text-slate-300" data-translate="cookieText">Utilizamos cookies para melhorar a sua experiência. Ao continuar a navegar, você concorda com a nossa <a href='#' class='underline hover:text-white'>Política de Cookies</a>.</p>
+        <button id="accept-cookies" class="bg-sky-600 text-white font-bold px-5 py-2 rounded-lg hover:bg-sky-700 transition-colors text-sm whitespace-nowrap" data-translate="cookieAccept">Entendi</button>
+    </div>
+
+    <script>
+        // --- TRANSLATION SCRIPT ---
+        const translations = {'pt-BR':{pageTitle:"Previto - Transformando Dados em Cuidado e Ativos Estratégicos",metaDescription:"A Previto converte dados de custos de saúde em ativos estratégicos para gestão, focando na prevenção de lesões por pressão. Buscamos investidores para nossa rodada Pre-Seed.",joinButton:"Junte-se à Rodada Pre-Seed",heroTitle:"Convertemos o maior custo invisível da saúde em um <span class=\"highlight-text\">ativo estratégico</span> e preditivo.",heroSubtitle:"A Previto atua no mercado de **US$26 bilhões** de prevenção de lesões por pressão, construindo uma vantagem competitiva através de um dataset proprietário e exclusivo.",heroCTA:"Conheça a Tese",problemLabel:"O CUSTO DO SILÊNCIO",problemTitle:"Um Problema Bilionário Escondido à Vista de Todos.",problemSubtitle:"Lesões por pressão não são apenas uma complicação; são uma falha sistêmica com custos devastadores.",problemStat1:"Custo anual apenas nos EUA, superando muitas outras condições de saúde conhecidas.",problemStat2:"Mortes anuais diretamente atribuídas a lesões por pressão. É uma crise de segurança do paciente.",problemStat3:"A grande maioria dos casos pode ser evitada com as ferramentas e dados corretos. É aqui que atuamos.",santanderBanner:"🏅 Selecionado para o programa de inovação <span class=\"font-bold text-slate-700\">Santander X Explorer</span>",tractionLabel:"VALIDAÇÃO PRÉ-PRODUTO",tractionTitle:"Validação de Mercado Conclusiva.",tractionSubtitle:"Investidores investem em validação. Provamos a tese com 28 profissionais de enfermagem com mais de 10 anos de atuação.",tractionStat1:"Confirmam que a solução é \"Extremamente Útil\".",tractionStat2:"Validam a estratégia de MVP na versão inicial.",tractionStat3:"Expõem ineficiência massiva, provando o nosso ROI.",tractionStat4:"Apontam prevenção de quedas como próximo passo.",testimonialLabel:"VOZES DO CAMPO",testimonialTitle:"O Que Dizem os Especialistas.",testimonialQuote:"“Isto não é apenas uma melhoria, é uma transformação. Ter dados que nos dizem onde e quando atuar antes que uma lesão se forme mudaria completamente a nossa forma de trabalhar. Reduziria o stress da equipe e, mais importante, salvaria a pele dos nossos pacientes.”",testimonialName:"Enfermeira M. S., Chefe de Unidade",testimonialRole:"15+ anos de experiência em cuidados intensivos",thesisLabel:"A TESE DE INVESTIMENTO",thesisTitle:"Nosso Data Moat: Um Ciclo Virtuoso.",thesisSubtitle:"Concorrentes vendem hardware. Nós construímos um ecossistema de dados. Cada leito Previto não só gera ROI, como se torna um nó em nossa rede de inteligência que cria uma barreira de entrada exponencial.",thesisCycle1:"Mais Clientes",thesisCycle2:"Mais Dados",thesisCycle3:"IA Mais Forte",thesisResult:"→ <span class=\"highlight-text\">Oferta Superior & Vantagem Competitiva</span>",howLabel:"NOSSA TECNOLOGIA",howTitle:"Simples, Inteligente e Preditivo.",howStep1Title:"1. Coleta Contínua",howStep1Desc:"Nossos sensores discretos no leito capturam milhares de pontos de dados de pressão e movimento por segundo, de forma anônima e segura.",howStep2Title:"2. Análise Preditiva",howStep2Desc:"Nossa IA analisa os dados em tempo real, identificando padrões de risco muito antes de serem visíveis ao olho humano.",howStep3Title:"3. Alertas Inteligentes",howStep3Desc:"A equipe de enfermagem recebe alertas simples e acionáveis em seus dispositivos, indicando qual paciente precisa de atenção e porquê.",whyNowLabel:"O MOMENTO É AGORA",whyNowTitle:"Uma Tempestade Perfeita de Oportunidades.",whyNow1Title:"Tecnologia Madura",whyNow1Desc:"O baixo custo e a alta precisão dos sensores IoT, aliados ao poder da cloud e da IA, tornam a nossa solução economicamente viável e escalável pela primeira vez na história.",whyNow2Title:"Mercado Receptivo",whyNow2Desc:"Hospitais estão sob pressão para otimizar custos e adotar modelos de \"value-based care\". Soluções com ROI claro, como a Previto, são prioridade máxima.",whyNow3Title:"Pressão Regulatória",whyNow3Desc:"Órgãos reguladores em todo o mundo estão a aumentar as penalizações por condições adquiridas no hospital, criando uma forte urgência para a adoção de tecnologias de prevenção.",founderLabel:"VANTAGEM INJUSTA",founderTitle:"Liderado por Quem Vivencia o Problema",founderRole:"Fundador & CEO",founderQuote:"“A Previto não nasceu numa planilha; nasceu da minha obstinação em resolver uma dor real que conheço intimamente. Esta é a nossa vantagem: entendemos o usuário, o comprador e o problema a um nível que a concorrência não consegue.”",askLabel:"O NOSSO PEDIDO (THE ASK)",askTitle:"€50.000 para Dominar o Mercado.",askSubtitle:"Buscamos capital para uma rodada Pre-Seed que irá financiar os marcos chave para desbloquear nossa próxima avaliação e escala.",askItem1Title:"Projetos-Piloto (60%)",askItem1Desc:"Financiar 3-5 implementações para obter métricas de ROI irrefutáveis e casos de estudo para marketing.",askItem2Title:"Produto & IP (25%)",askItem2Desc:"Finalizar o MVP conectado e iniciar o registo de patente da nossa tecnologia de sensores.",askItem3Title:"Operações (15%)",askItem3Desc:"Custos operacionais, regulatórios e preparação para certificação (ex: Anvisa).",roadmapLabel:"NOSSA JORNADA",roadmapTitle:"Construindo o Futuro da Prevenção.",roadmapStep1Title:"Validação e Pesquisa",roadmapStep1Desc:"28 entrevistas com especialistas, validação do problema e da solução.",roadmapStep1Status:"CONCLUÍDO",roadmapStep2Title:"Rodada Pre-Seed (€50k)",roadmapStep2Desc:"Execução dos projetos-piloto, finalização do MVP e proteção de IP.",roadmapStep2Status:"VOCÊ ESTÁ AQUI",roadmapStep3Title:"Escala e Rodada Seed",roadmapStep3Desc:"Expandir para 20+ hospitais, otimizar a IA com dados dos pilotos e levantar rodada Seed.",roadmapStep3Status:"PRÓXIMO PASSO",faqLabel:"PERGUNTAS FREQUENTES",faqTitle:"Respondendo às Suas Dúvidas.",faq1Title:"Qual é o modelo de negócio?",faq1Desc:"Nosso modelo é B2B SaaS (Software as a Service). Cobramos uma assinatura mensal por leito monitorado, o que garante receita recorrente e alinha nosso sucesso com o ROI do cliente. O hardware é fornecido como parte do serviço.",faq2Title:"Como a tecnologia está protegida?",faq2Desc:"Estamos a iniciar o processo de registo de patente para a nossa tecnologia de sensores e para os algoritmos de análise de dados. Além disso, nosso principal ativo é o dataset proprietário, que cria uma barreira competitiva que se fortalece com o tempo.",faq3Title:"Quem são os concorrentes?",faq3Desc:"Os concorrentes atuais focam principalmente em \"hardware inteligente\", como colchões de alívio de pressão. A nossa abordagem é fundamentalmente diferente: somos uma empresa de dados. Nossa vantagem não está no hardware, mas na inteligência que extraímos dele, criando um ecossistema de prevenção.",ctaTitle:"Vamos Conversar.",ctaSubtitle:"Esta é a oportunidade de entrar no piso térreo de uma empresa com dados validados e um fosso competitivo claro. Para acessar o data room ou agendar uma reunião, use uma das opções abaixo.",directContact:"Contato Direto:",copyButton:"Copiar",copyFeedback:"E-mail copiado!",formTitle:"Ou envie uma mensagem",formName:"Nome",formEmail:"E-mail",formMessage:"Mensagem",formSubmit:"Enviar Mensagem",footerRights:"&copy; 2025 Previto. Todos os direitos reservados.",footerPrivacy:"Política de Privacidade",footerTerms:"Termos de Uso",cookieText:"Utilizamos cookies para melhorar a sua experiência. Ao continuar a navegar, você concorda com a nossa <a href='#' class='underline hover:text-white'>Política de Cookies</a>.",cookieAccept:"Entendi"},'en':{pageTitle:"Previto - Turning Data into Care and Strategic Assets",metaDescription:"Previto converts healthcare cost data into strategic management assets, focusing on pressure injury prevention. We are seeking investors for our Pre-Seed round.",joinButton:"Join the Pre-Seed Round",heroTitle:"We turn the biggest invisible cost in healthcare into a <span class=\"highlight-text\">strategic and predictive asset</span>.",heroSubtitle:"Previto operates in the **$26 billion** pressure injury prevention market, building a competitive advantage through a proprietary and exclusive dataset.",heroCTA:"Discover the Thesis",problemLabel:"THE COST OF SILENCE",problemTitle:"A Billion-Dollar Problem Hiding in Plain Sight.",problemSubtitle:"Pressure injuries aren't just a complication; they are a systemic failure with devastating costs.",problemStat1:"Annual cost in the US alone, surpassing many other well-known health conditions.",problemStat2:"Annual deaths directly attributed to pressure injuries. It's a patient safety crisis.",problemStat3:"The vast majority of cases can be prevented with the right tools and data. This is where we come in.",santanderBanner:"🏅 Selected for the <span class=\"font-bold text-slate-700\">Santander X Explorer</span> innovation program",tractionLabel:"PRE-PRODUCT VALIDATION",tractionTitle:"Conclusive Market Validation.",tractionSubtitle:"Investors invest in validation. We proved our thesis with 28 nursing professionals with over 10 years of experience.",tractionStat1:"Confirm the solution is \"Extremely Useful.\"",tractionStat2:"Validate the MVP strategy in its initial version.",tractionStat3:"Expose massive inefficiency, proving our ROI.",tractionStat4:"Point to fall prevention as the next step.",testimonialLabel:"VOICES FROM THE FIELD",testimonialTitle:"What the Experts Are Saying.",testimonialQuote:"\"This isn't just an improvement; it's a transformation. Having data that tells us where and when to act before an injury forms would completely change how we work. It would reduce staff stress and, most importantly, save our patients' skin.\"",testimonialName:"Nurse M. S., Unit Manager",testimonialRole:"15+ years of ICU experience",thesisLabel:"THE INVESTMENT THESIS",thesisTitle:"Our Data Moat: A Virtuous Cycle.",thesisSubtitle:"Competitors sell hardware. We build a data ecosystem. Each Previto bed not only generates ROI but also becomes a node in our intelligence network, creating an exponential barrier to entry.",thesisCycle1:"More Clients",thesisCycle2:"More Data",thesisCycle3:"Smarter AI",thesisResult:"→ <span class=\"highlight-text\">Superior Offering & Competitive Advantage</span>",howLabel:"OUR TECHNOLOGY",howTitle:"Simple, Smart, and Predictive.",howStep1Title:"1. Continuous Collection",howStep1Desc:"Our discreet bed sensors capture thousands of pressure and movement data points per second, anonymously and securely.",howStep2Title:"2. Predictive Analysis",howStep2Desc:"Our AI analyzes data in real-time, identifying risk patterns long before they are visible to the human eye.",howStep3Title:"3. Smart Alerts",howStep3Desc:"The nursing staff receives simple, actionable alerts on their devices, indicating which patient needs attention and why.",whyNowLabel:"THE TIME IS NOW",whyNowTitle:"A Perfect Storm of Opportunity.",whyNow1Title:"Mature Technology",whyNow1Desc:"The low cost and high precision of IoT sensors, combined with the power of cloud and AI, make our solution economically viable and scalable for the first time in history.",whyNow2Title:"Receptive Market",whyNow2Desc:"Hospitals are under pressure to optimize costs and adopt value-based care models. Solutions with a clear ROI, like Previto, are a top priority.",whyNow3Title:"Regulatory Pressure",whyNow3Desc:"Regulatory bodies worldwide are increasing penalties for hospital-acquired conditions, creating a strong urgency for the adoption of prevention technologies.",founderLabel:"UNFAIR ADVANTAGE",founderTitle:"Led by Someone Who Lives the Problem",founderRole:"Founder & CEO",founderQuote:"\"Previto wasn't born in a spreadsheet; it was born from my obsession with solving a real pain I know intimately. This is our advantage: we understand the user, the buyer, and the problem on a level the competition can't.\"",askLabel:"THE ASK",askTitle:"€50,000 to Dominate the Market.",askSubtitle:"We are seeking capital for a Pre-Seed round to fund key milestones that will unlock our next valuation and scale.",askItem1Title:"Pilot Projects (60%)",askItem1Desc:"Fund 3-5 implementations to obtain irrefutable ROI metrics and marketing case studies.",askItem2Title:"Product & IP (25%)",askItem2Desc:"Finalize the connected MVP and begin the patent registration process for our sensor technology.",askItem3Title:"Operations (15%)",askItem3Desc:"Operational, regulatory costs, and preparation for certification (e.g., ANVISA/FDA).",roadmapLabel:"OUR JOURNEY",roadmapTitle:"Building the Future of Prevention.",roadmapStep1Title:"Validation and Research",roadmapStep1Desc:"28 expert interviews, validation of the problem and solution.",roadmapStep1Status:"COMPLETED",roadmapStep2Title:"Pre-Seed Round (€50k)",roadmapStep2Desc:"Execution of pilot projects, MVP finalization, and IP protection.",roadmapStep2Status:"YOU ARE HERE",roadmapStep3Title:"Scale and Seed Round",roadmapStep3Desc:"Expand to 20+ hospitals, optimize AI with pilot data, and raise a Seed round.",roadmapStep3Status:"NEXT STEP",faqLabel:"FREQUENTLY ASKED QUESTIONS",faqTitle:"Answering Your Questions.",faq1Title:"What is the business model?",faq1Desc:"Our model is B2B SaaS (Software as a Service). We charge a monthly subscription per monitored bed, which ensures recurring revenue and aligns our success with the customer's ROI. The hardware is provided as part of the service.",faq2Title:"How is the technology protected?",faq2Desc:"We are starting the patent registration process for our sensor technology and data analysis algorithms. Furthermore, our main asset is the proprietary dataset, which creates a competitive barrier that strengthens over time.",faq3Title:"Who are the competitors?",faq3Desc:"Current competitors mainly focus on 'smart hardware,' like pressure-relief mattresses. Our approach is fundamentally different: we are a data company. Our advantage isn't in the hardware, but in the intelligence we extract from it, creating a prevention ecosystem.",ctaTitle:"Let's Talk.",ctaSubtitle:"This is the opportunity to get in on the ground floor of a company with validated data and a clear competitive moat. To access the data room or schedule a meeting, use one of the options below.",directContact:"Direct Contact:",copyButton:"Copy",copyFeedback:"Email copied!",formTitle:"Or send a message",formName:"Name",formEmail:"Email",formMessage:"Message",formSubmit:"Send Message",footerRights:"&copy; 2025 Previto. All rights reserved.",footerPrivacy:"Privacy Policy",footerTerms:"Terms of Use",cookieText:"We use cookies to enhance your experience. By continuing to browse, you agree to our <a href='#' class='underline hover:text-white'>Cookie Policy</a>.",cookieAccept:"I understand"},'es':{pageTitle:"Previto - Transformando Datos en Cuidado y Activos Estratégicos",metaDescription:"Previto convierte los datos de costes sanitarios en activos estratégicos para la gestión, centrándose en la prevención de úlceras por presión. Buscamos inversores para nuestra ronda Pre-Seed.",joinButton:"Únete a la Ronda Pre-Seed",heroTitle:"Convertimos el mayor coste invisible de la sanidad en un <span class=\"highlight-text\">activo estratégico</span> y predictivo.",heroSubtitle:"Previto opera en el mercado de **26.000 millones de dólares** de la prevención de úlceras por presión, construyendo una ventaja competitiva a través de un conjunto de datos propio y exclusivo.",heroCTA:"Conoce la Tesis",problemLabel:"EL COSTE DEL SILENCIO",problemTitle:"Un Problema Multimillonario Oculto a la Vista.",problemSubtitle:"Las úlceras por presión no son solo una complicación; son un fallo sistémico con costes devastadores.",problemStat1:"Coste anual solo en EE.UU., superando muchas otras condiciones de salud conocidas.",problemStat2:"Muertes anuales atribuidas directamente a las úlceras por presión. Es una crisis de seguridad del paciente.",problemStat3:"La gran mayoría de los casos se pueden evitar con las herramientas y los datos correctos. Aquí es donde actuamos.",santanderBanner:"🏅 Seleccionado para el programa de innovación <span class=\"font-bold text-slate-700\">Santander X Explorer</span>",tractionLabel:"VALIDACIÓN PRE-PRODUCTO",tractionTitle:"Validación de Mercado Concluyente.",tractionSubtitle:"Los inversores invierten en validación. Demostramos nuestra tesis con 28 profesionales de enfermería con más de 10 años de experiencia.",tractionStat1:"Confirman que la solución es \"Extremadamente Útil\".",tractionStat2:"Valian la estrategia de MVP en su versión inicial.",tractionStat3:"Exponen una ineficiencia masiva, demostrando nuestro ROI.",tractionStat4:"Señalan la prevención de caídas como el siguiente paso.",testimonialLabel:"VOCES DEL CAMPO",testimonialTitle:"Lo que Dicen los Expertos.",testimonialQuote:"\"Esto no es solo una mejora, es una transformación. Tener datos que nos digan dónde y cuándo actuar antes de que se forme una úlcera cambiaría por completo nuestra forma de trabajar. Reduciría el estrés del personal y, lo más importante, salvaría la piel de nuestros pacientes.\"",testimonialName:"Enfermera M. S., Jefa de Unidad",testimonialRole:"15+ años de experiencia en UCI",thesisLabel:"LA TESIS DE INVERSIÓN",thesisTitle:"Nuestro Foso de Datos: Un Círculo Virtuoso.",thesisSubtitle:"Los competidores venden hardware. Nosotros construimos un ecosistema de datos. Cada cama Previto no solo genera ROI, sino que se convierte en un nodo de nuestra red de inteligencia, creando una barrera de entrada exponencial.",thesisCycle1:"Más Clientes",thesisCycle2:"Más Datos",thesisCycle3:"IA Más Potente",thesisResult:"→ <span class=\"highlight-text\">Oferta Superior y Ventaja Competitiva</span>",howLabel:"NUESTRA TECNOLOGÍA",howTitle:"Simple, Inteligente y Predictiva.",howStep1Title:"1. Recolección Continua",howStep1Desc:"Nuestros discretos sensores en la cama capturan miles de puntos de datos de presión y movimiento por segundo, de forma anónima y segura.",howStep2Title:"2. Análisis Predictivo",howStep2Desc:"Nuestra IA analiza los datos en tiempo real, identificando patrones de riesgo mucho antes de que sean visibles para el ojo humano.",howStep3Title:"3. Alertas Inteligentes",howStep3Desc:"El personal de enfermería recibe alertas sencillas y procesables en sus dispositivos, indicando qué paciente necesita atención y por qué.",whyNowLabel:"EL MOMENTO ES AHORA",whyNowTitle:"Una Tormenta Perfecta de Oportunidades.",whyNow1Title:"Tecnología Madura",whyNow1Desc:"El bajo coste y la alta precisión de los sensores IoT, combinados con el poder de la nube y la IA, hacen que nuestra solución sea económicamente viable y escalable por primera vez en la historia.",whyNow2Title:"Mercado Receptivo",whyNow2Desc:"Los hospitales están bajo presión para optimizar costes y adoptar modelos de \"atención basada en el valor\". Las soluciones con un claro ROI, como Previto, son una máxima prioridad.",whyNow3Title:"Presión Regulatoria",whyNow3Desc:"Los organismos reguladores de todo el mundo están aumentando las penalizaciones por las condiciones adquiridas en el hospital, creando una fuerte urgencia para la adopción de tecnologías de prevención.",founderLabel:"VENTAJA INJUSTA",founderTitle:"Liderado por Quien Vive el Problema",founderRole:"Fundador y CEO",founderQuote:"\"Previto no nació en una hoja de cálculo; nació de mi obsesión por resolver un dolor real que conozco íntimamente. Esta es nuestra ventaja: entendemos al usuario, al comprador y al problema a un nivel que la competencia no puede.\"",askLabel:"LA PETICIÓN (THE ASK)",askTitle:"50.000€ para Dominar el Mercado.",askSubtitle:"Buscamos capital para una ronda Pre-Seed que financiará los hitos clave para desbloquear nuestra próxima valoración y escala.",askItem1Title:"Proyectos Piloto (60%)",askItem1Desc:"Financiar 3-5 implementaciones para obtener métricas de ROI irrefutables y casos de estudio para marketing.",askItem2Title:"Producto y PI (25%)",askItem2Desc:"Finalizar el MVP conectado e iniciar el proceso de registro de patente para nuestra tecnología de sensores.",askItem3Title:"Operaciones (15%)",askItem3Desc:"Costes operativos, regulatorios y preparación para la certificación (ej: ANVISA/FDA).",roadmapLabel:"NUESTRO VIAJE",roadmapTitle:"Construyendo el Futuro de la Prevención.",roadmapStep1Title:"Validación e Investigación",roadmapStep1Desc:"28 entrevistas con expertos, validación del problema y la solución.",roadmapStep1Status:"COMPLETADO",roadmapStep2Title:"Ronda Pre-Seed (50.000€)",roadmapStep2Desc:"Ejecución de proyectos piloto, finalización del MVP y protección de la PI.",roadmapStep2Status:"ESTÁS AQUÍ",roadmapStep3Title:"Escala y Ronda Seed",roadmapStep3Desc:"Expandir a más de 20 hospitales, optimizar la IA con datos de los pilotos y levantar una ronda Seed.",roadmapStep3Status:"SIGUIENTE PASO",faqLabel:"PREGUNTAS FRECUENTES",faqTitle:"Respondiendo a Sus Dudas.",faq1Title:"¿Cuál es el modelo de negocio?",faq1Desc:"Nuestro modelo es B2B SaaS (Software como Servicio). Cobramos una suscripción mensual por cama monitorizada, lo que garantiza ingresos recurrentes y alinea nuestro éxito con el ROI del cliente. El hardware se proporciona como parte del servicio.",faq2Title:"¿Cómo se protege la tecnología?",faq2Desc:"Estamos iniciando el proceso de registro de patentes para nuestra tecnología de sensores y algoritmos de análisis de datos. Además, nuestro principal activo es el conjunto de datos propietario, que crea una barrera competitiva que se fortalece con el tiempo.",faq3Title:"¿Quiénes son los competidores?",faq3Desc:"Los competidores actuales se centran principalmente en 'hardware inteligente', como los colchones de alivio de presión. Nuestro enfoque es fundamentalmente diferente: somos una empresa de datos. Nuestra ventaja no está en el hardware, sino en la inteligencia que extraemos de él, creando un ecosistema de prevención.",ctaTitle:"Hablemos.",ctaSubtitle:"Esta es la oportunidad de entrar en la planta baja de una empresa con datos validados y un foso competitivo claro. Para acceder a la sala de datos o programar una reunión, utilice una de las siguientes opciones.",directContact:"Contacto Directo:",copyButton:"Copiar",copyFeedback:"¡Correo copiado!",formTitle:"O envíe un mensaje",formName:"Nombre",formEmail:"Correo electrónico",formMessage:"Mensaje",formSubmit:"Enviar Mensaje",footerRights:"&copy; 2025 Previto. Todos los derechos reservados.",footerPrivacy:"Política de Privacidad",footerTerms:"Términos de Uso",cookieText:"Utilizamos cookies para mejorar su experiencia. Al continuar navegando, acepta nuestra <a href='#' class='underline hover:text-white'>Política de Cookies</a>.",cookieAccept:"Entendido"}};
+
+        const setLanguage = (lang) => {
+            document.documentElement.lang = lang;
+            document.querySelectorAll('[data-translate]').forEach(el => {
+                const key = el.dataset.translate;
+                if (translations[lang] && translations[lang][key]) {
+                    if (el.tagName === 'META' && el.name === 'description') { el.content = translations[lang][key]; } 
+                    else if (el.tagName === 'TITLE') { el.textContent = translations[lang][key]; }
+                    else { el.innerHTML = translations[lang][key]; }
+                }
+            });
+            document.querySelectorAll('#lang-switcher .lang-btn').forEach(btn => btn.classList.toggle('active', btn.dataset.lang === lang));
+            localStorage.setItem('previto-lang', lang);
+        };
+        
+        document.addEventListener('DOMContentLoaded', () => {
+            const userLang = localStorage.getItem('previto-lang') || 'pt-BR';
+            setLanguage(userLang);
+            document.getElementById('lang-switcher').addEventListener('click', (e) => { if (e.target.classList.contains('lang-btn')) { setLanguage(e.target.dataset.lang); } });
+            const cookieBanner = document.getElementById('cookie-banner'), acceptCookies = document.getElementById('accept-cookies');
+            if (!localStorage.getItem('previto-cookies-accepted')) { setTimeout(() => cookieBanner.style.transform = 'translateY(0)', 1500); }
+            acceptCookies.addEventListener('click', () => { cookieBanner.style.transform = 'translateY(100%)'; localStorage.setItem('previto-cookies-accepted', 'true'); });
+        });
+
+        const header = document.getElementById('header');
+        window.onscroll = () => window.scrollY > 50 ? header.classList.add('header-scrolled') : header.classList.remove('header-scrolled');
+
+        document.getElementById('copy-button').addEventListener('click', () => {
+            const feedback = document.getElementById('copy-feedback');
+            navigator.clipboard.writeText('norbertocimirro@gmail.com').then(() => { feedback.style.opacity = '1'; setTimeout(() => feedback.style.opacity = '0', 2000); });
+        });
+
+        document.getElementById('contact-form').addEventListener('submit', (e) => {
+            e.preventDefault();
+            const name = e.target.name.value, email = e.target.email.value, message = e.target.message.value, subject = `Contato de Investidor: ${name}`, body = `Nome: ${name}\nE-mail para retorno: ${email}\n\nMensagem:\n${message}`;
+            window.location.href = `mailto:norbertocimirro@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+        });
+        
+        document.querySelectorAll('.faq-question').forEach(button => { button.addEventListener('click', () => button.parentElement.classList.toggle('open')); });
+
+        const counters = document.querySelectorAll('.counter');
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const counter = entry.target, target = +counter.getAttribute('data-target'), duration = 2000;
+                    let startTime = null;
+                    const animate = (currentTime) => {
+                        if (!startTime) startTime = currentTime;
+                        const progress = Math.min((currentTime - startTime) / duration, 1), currentValue = Math.floor(progress * target);
+                        counter.innerText = currentValue.toLocaleString(document.documentElement.lang);
+                        if (progress < 1) { window.requestAnimationFrame(animate); } else { counter.innerText = target.toLocaleString(document.documentElement.lang); }
+                    };
+                    window.requestAnimationFrame(animate);
+                    observer.unobserve(counter);
+                }
+            });
+        }, { threshold: 0.5 });
+        counters.forEach(counter => observer.observe(counter));
+    </script>
+    
+</body>
+</html>
